@@ -90,9 +90,19 @@ public class Main {
         }
         //Задача 3
         int year = 2012;
-        if (year % 100 == 0) {
+        if ((year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0)) {
+            System.out.println(year + " год является високосным");
+        } else {
             System.out.println(year + " год не является високосным");
-        } else if ((year % 4 == 0) || (year % 400 == 0)) {
+        }
+        year = 2000;
+        if ((year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0)) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+        year = 2005;
+        if ((year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0)) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
@@ -100,67 +110,55 @@ public class Main {
         //Задача 4
         int deliveryDistance = 95;
         int deliveryDays = 1;
-        if (deliveryDistance > 100) {
-            System.out.println("Доставки нет.");
-        }
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays + " день.");
-        }
-        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             deliveryDays = deliveryDays + 1;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
-        }
-        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             deliveryDays = deliveryDays + 2;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
+        } else {
+            System.out.println("Доставки нет.");
         }
         deliveryDistance = 18;
         deliveryDays = 1;
-        if (deliveryDistance > 100) {
-            System.out.println("Доставки нет.");
-        }
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays + " день.");
-        }
-        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             deliveryDays = deliveryDays + 1;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
-        }
-        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             deliveryDays = deliveryDays + 2;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
+        } else {
+            System.out.println("Доставки нет.");
         }
         deliveryDistance = 44;
         deliveryDays = 1;
-        if (deliveryDistance > 100) {
-            System.out.println("Доставки нет.");
-        }
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays + " день.");
-        }
-        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             deliveryDays = deliveryDays + 1;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
-        }
-        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             deliveryDays = deliveryDays + 2;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
+        } else {
+            System.out.println("Доставки нет.");
         }
         deliveryDistance = 116;
         deliveryDays = 1;
-        if (deliveryDistance > 100) {
-            System.out.println("Доставки нет.");
-        }
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays + " день.");
-        }
-        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             deliveryDays = deliveryDays + 1;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
-        }
-        if (deliveryDistance >= 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             deliveryDays = deliveryDays + 2;
             System.out.println("Потребуется дней: " + deliveryDays + " дня.");
+        } else {
+            System.out.println("Доставки нет.");
         }
         //Задача 5
         int monthNumber = 12;
